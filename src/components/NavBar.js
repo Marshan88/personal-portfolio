@@ -75,7 +75,7 @@ export const NavBar = () => {
                 <img src={navIcon2} alt="buymeacoffe" />
               </a>
               <a href="#">
-                <img src={navIcon3} alt="discord" />
+                <img src={navIcon3} alt="github" />
               </a>
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>

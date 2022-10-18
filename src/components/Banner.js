@@ -67,14 +67,11 @@ export const Banner = () => {
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    Hello, world!<br></br>I'm currently a Student at GET-Academy, looking for an internship.<br></br>
+                    I've been through a 6 months course with HTML, CSS, Javascript and C#.
+                    I experienced what it's like to work alone, in pairs and in a team w/ "customer".<br></br><br></br>
+                    GET-academy is a great way to start in IT, and not just for programming, but also for the key competencies such as GRIT and growth mindset.<br></br>
+                    With Chorei (A Japanese Morning Business Routine) every morning, this quickly became something I grew allot from and helped me set up a better life-style, as well as getting a better insight about myself and team-dynamics.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let's connect{" "}

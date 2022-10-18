@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Container } from "react-bootstrap";
 import contactImg from "..assets/img/contact-img.svg";
-import e from "express";
-import { useLayoutEffect } from "react";
+
 export const Contact = () => {
   const formInitialDetails = {
     FirstName: "",
@@ -16,7 +15,7 @@ export const Contact = () => {
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState({});
 
-  const onFormUpdattttte = (categgory, value) => {
+  const onFormUpdate = (category, value) => {
     setFormDetails({
       ...formDetails,
       [category]: value,
@@ -26,15 +25,15 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText('Sending...');
-    let response = await fetch("http://localhost.5000/contact", {
+    let response = await fetch("http://localhost:5000/contact", {
         method: "POST",
         headers: {
-            "Contact-Type": "Application/json;charset=utf-8",
+            "Content-Type": "Application/json;charset=utf-8",
         },
         body: JSON.stringify(formDetails),
     });
     setButtonText("Send");
-    let result = respons.json();
+    let result = response.json();
     setFormDetails(formInitialDetails);
     if (result.code === 200){
         setStatus({ success: true, message: 'Message sent sucessfully'});
@@ -59,7 +58,7 @@ export const Contact = () => {
                     type="text"
                     value={formDetails.firstName}
                     placeholder="first name"
-                    onChange={(e) => onFormUpdate("FirstName", e.target.value)}
+                    onChange={(e) => onFormUpdate('FirstName', e.target.value)}
                   />
                 </Col>
                 <Col sm={6} className="px-1">
@@ -67,7 +66,7 @@ export const Contact = () => {
                     type="text"
                     value={formDetails.lastName}
                     placeholder="Last name"
-                    onChange={(e) => onFormUpdate("lastname", e.target.value)}
+                    onChange={(e) => onFormUpdate('lastname', e.target.value)}
                   />
                 </Col>
                 <Col sm={6} className="px-1">
@@ -75,7 +74,7 @@ export const Contact = () => {
                     type="email"
                     value={formDetails.email}
                     placeholder="Email address"
-                    onChange={(e) => onFormUpdate("email", e.target.value)}
+                    onChange={(e) => onFormUpdate('email', e.target.value)}
                   />
                 </Col>
                 <Col sm={6} className="px-1">
@@ -83,7 +82,7 @@ export const Contact = () => {
                     type="tel"
                     value={formDetails.phone}
                     placeholder="Phone number"
-                    onChange={(e) => onFormUpdate("phone", e.target.value)}
+                    onChange={(e) => onFormUpdate('phone', e.target.value)}
                   />
                 </Col>
                 <Col>
@@ -97,7 +96,7 @@ export const Contact = () => {
                     <span>{buttonText}</span>
                   </button>
                 </Col>
-                {status.message && (
+                {status.message &&
                   <Col>
                     <p
                       className={
@@ -107,7 +106,7 @@ export const Contact = () => {
                       {status.message}
                     </p>
                   </Col>
-                )}
+                }
               </Row>
             </form>
           </Col>
