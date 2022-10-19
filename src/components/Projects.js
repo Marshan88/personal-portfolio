@@ -13,6 +13,7 @@ export const Projects = () => {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
+      // url: <a href="https://marshan88.github.io/Zelda/"></a>,
     },
     {
       title: "Business Startup",
@@ -115,7 +116,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" alt=""src={colorSharp2}></img>
     </section>
   );
 };

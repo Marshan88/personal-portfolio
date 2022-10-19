@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
+import githubIcon from "../assets/img/githubIcon.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 
@@ -69,12 +69,12 @@ export const NavBar = () => {
           <span className="navBar-text">
             <div className="social-icon">
               <a href="mailto:mariusshenriksen@gmail.com">
-                <img src={navIcon1} alt="email" />
-              </a>
-              <a href="https://www.buymeacoffee.com/mariushenrix">
-                <img src={navIcon2} alt="buymeacoffe" />
+                <img src={githubIcon} alt="email" />
               </a>
               <a href="https://github.com/Marshan88">
+                <img src={navIcon2} alt="buymeacoffe" />
+              </a>
+              <a href="https://www.buymeacoffee.com/mariushenrix">
                 <img src={navIcon3} alt="github" />
               </a>
             </div>
