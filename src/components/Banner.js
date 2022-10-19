@@ -56,43 +56,31 @@ export const Banner = () => {
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>
-                    {`Hi! I'm Marius Henriksen`}{" "}
-                    <span
-                      className="txt-rotate"
-                      dataPeriod="1000"
-                      data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
-                    >
-                      <span className="wrap">{text}</span>
-                    </span>
-                  </h1>
-                  <p>
-                    Hello, world!<br></br>I'm currently a Student at
-                    GET-Academy, looking for an internship.<br></br> I've been
-                    through a 6 months course with HTML, CSS, Javascript and C#.
-                    I experienced what it's like to work alone, in pairs and in
-                    a team w/ "customer".<br></br> <br></br> GET-academy is a
-                    great way to start in IT, and not just for programming, but
-                    also for the key competencies such as GRIT and growth
-                    mindset.<br></br> With Chorei (A Japanese Morning Business
-                    Routine) every morning, this quickly became something I grew
-                    allot from and helped me set up a better life-style, as well
-                    as getting a better insight about myself and team-dynamics.
-                  </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
-                </div>
-              )}
-            </TrackVisibility>
+            <span className="tagline">Welcome to my Portfolio</span>
+            <h1>
+              {`My name is Marius Henriksen`}
+              <br></br><br></br>
+              <span
+                className="txt-rotate"
+                dataPeriod="1000"
+                data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+              >
+                <span className="wrap">{text}</span>
+              </span>
+            </h1>
+            <br></br>
+            <p>
+              Hello, world!<br></br>I'm currently a Student at GET-Academy,
+              looking for an internship.<br></br> I've been through a 6 months
+              course with HTML, CSS, Javascript and C#. I experienced what it's
+              like to work alone, in pairs and in a team w/ "customer".<br></br>{" "}
+              <br></br> GET-academy is a great way to start not only for
+              programming, but also for the key competencies such as GRIT and
+              growth mindset.<br></br> With Chorei (A Japanese Morning Business
+              Routine) every morning, this quickly became something I grew allot
+              from and helped me set up a better life-style, as well as getting
+              a better insight about myself and team-dynamics.
+            </p>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
