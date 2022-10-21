@@ -13,37 +13,23 @@ export const Projects = () => {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
-      // url: <a href="https://marshan88.github.io/Zelda/"></a>,
+      link: "https://marshan88.github.io/Starling",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      link: "https://marshan88.github.io/Zelda/",
     },
     {
       title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      description: "https://github.com/Marshan88/CSharpProjects",
       imgUrl: projImg3,
     },
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
@@ -116,7 +102,8 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" alt=""src={colorSharp2}></img>
+      <img className="background-image-right" alt="" src={colorSharp2}></img>
     </section>
   );
+  
 };
