@@ -35,7 +35,6 @@ body {
   color: #fff !important;
   font-family: "Centra", sans-serif !important;
 }
-
 h1,
 h2,
 h3,
@@ -85,23 +84,44 @@ p.success {
 p.danger {
   color: red;
 }
-
-@media (min-width: 1700px) {s
+@media (min-width: 1700px) {
   main .container {
     max-width: 100%;
     padding: 0 150px;
-    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .banner img {
+    display: none;
+  }
+  .banner h1 {
+    zoom: 80%;
+  }
+  .banner h2 {
+    zoom: 150%;
+  }
+  .txt-rotate > .wrap {
+    zoom: 80%;
+  }
+  .project {
+    display:contents;
   }
 }
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
   * {
     animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important; /* (https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/#comment-1700170) */
+    animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
   }
 }
 
 /************ Navbar Css ************/
+
+.revert-img-color {
+  -webkit-filter:invert(1);
+  filter: invert(1);
+  size: 100px;
+}
 
 nav.navbar {
   padding: 18px 0;
@@ -109,7 +129,7 @@ nav.navbar {
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition: 0.32s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 nav.navbar.scrolled {
   padding: 18px 0;
@@ -164,9 +184,9 @@ span.navbar-text {
   transform: scale(1);
 }
 .social-icon a img {
-  width: 40%;
+  width: 60%;
   z-index: 1;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .social-icon a:hover img {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
@@ -256,11 +276,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   height: 100vh;
-  padding: 500px 0 0 0;
+  padding: 360px 0 1000px 0;
   background-image: url("./assets/img/banner-bg.png");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .banner .tagline {
   font-weight: 700;
@@ -322,7 +343,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   100% {
     transform: translateY(-20px);
   }
-
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
@@ -330,14 +350,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 
-.project{
+.project {
   height: 100vh;
   position: relative;
   background-color: black;
+  padding: 323px 0 600px 0;
   overflow-y: hidden;
-  padding: 323px 0 0 0;
 }
-
 .project h2 {
   font-size: 45px;
   font-weight: 700;
@@ -464,66 +483,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.newsletter-bx {
-  background: #ffffff;
-  border-radius: 55px;
-  color: #121212;
-  padding: 85px 125px;
-  margin-bottom: 80px;
-  margin-top: -122px;
-}
-.newsletter-bx h3 {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.2em;
-}
-.new-email-bx {
-  background: #fff;
-  padding: 5px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-}
-.new-email-bx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;
-  left: -1px;
-  bottom: -1px;
-  right: -1px;
-}
-.new-email-bx::after {
-  content: "";
-  background: #fff;
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.new-email-bx input {
-  width: 100%;
-  color: #121212;
-  font-weight: 500;
-  background: transparent;
-  border: 0;
-  padding: 0 15px;
-}
-.new-email-bx button {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-  padding: 20px 65px;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border-radius: 18px;
 }
 .footer img {
   width: 26%;

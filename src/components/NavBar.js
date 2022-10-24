@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/img/logo.svg";
 import githubIcon from "../assets/img/githubIcon.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import coffee from "../assets/img/coffee.svg";
+import email2 from "../assets/img/email2.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -60,13 +60,13 @@ export const NavBar = () => {
           <span className="navBar-text">
             <div className="social-icon">
               <a href="mailto:mariusshenriksen@gmail.com">
-                <img src={githubIcon} alt="email" />
+                <img src={email2} className="revert-img-color" alt="email" />
               </a>
               <a href="https://github.com/Marshan88">
-                <img src={navIcon2} alt="buymeacoffe" />
+                <img src={githubIcon} className="revert-img-color" alt="github" />
               </a>
               <a href="https://www.buymeacoffee.com/mariushenrix">
-                <img src={navIcon3} alt="github" />
+                <img src={coffee} className="revert-img-color" alt="buymeacoffe" />
               </a>
             </div>
           </span>

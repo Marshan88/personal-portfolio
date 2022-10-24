@@ -57,16 +57,17 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`My name is Marius Henriksen`}
-              <br></br><br></br>
+              {`My name is`} {<br></br>}{`Marius Henriksen`}
+              </h1>
+              <br></br>
+              <h2>
               <span
                 className="txt-rotate"
-                // dataPeriod="1000"
                 data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
               >
                 <span className="wrap">{text}</span>
               </span>
-            </h1>
+            </h2>
             <br></br>
             <p>
               Hello, world!<br></br>I'm currently a Student at GET-Academy,
