@@ -29,19 +29,23 @@ export const Projects = () => {
     },
   ];
 
-  const [isVisibles, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(true);
+  const [height, setHeight] = useState(0)
+
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
-    return () => window.removeEventListener("scroll", listenToScroll);
-  }, []);
+    return () =>
+      window.removeEventListener("scroll", listenToScroll);
+  }, [])
+
   const listenToScroll = () => {
-    let heightToHideFrom = 1000;
-    const winScroll =
-      document.body.scrollTop || document.documentElement.scrollTop;
+    let heightToHideFrom = 1080;
+    const winScroll = document.body.scrollTop ||
+      document.documentElement.scrollTop;
+    setHeight(winScroll);
 
     if (winScroll > heightToHideFrom) {
-      isVisibles &&
-        setIsVisible(true);
+      isVisible && setIsVisible(true);
     } else {
       setIsVisible(false);
     }
@@ -59,8 +63,8 @@ export const Projects = () => {
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
-            {isVisibles && (
-              <TrackVisibility id="reveal">
+            {isVisible &&
+              <TrackVisibility id="hide">
                 {({ isVisible }) => (
                   <div
                     className={
@@ -119,7 +123,7 @@ export const Projects = () => {
                   </div>
                 )}
               </TrackVisibility>
-            )}
+            }
           </Col>
         </Row>
       </Container>

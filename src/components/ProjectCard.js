@@ -1,7 +1,7 @@
 import { Col } from "react-bootstrap";
 
 const handleClick = (link) => () => {
-  window.location.href = link;
+  window.location.href=link;
 }
 
 export const ProjectCard = ({ title, description, imgUrl, link }) => {
