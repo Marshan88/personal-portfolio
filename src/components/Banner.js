@@ -53,16 +53,17 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
               {`My name is`} {<br></br>}{`Marius Henriksen`}
-              </h1>
-              <br></br>
-              <h2>
+            </h1>
+            <br></br>
+            <h2>
               <span
                 className="txt-rotate"
+                // dataPeriod="1000"
                 data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
               >
                 <span className="wrap">{text}</span>
