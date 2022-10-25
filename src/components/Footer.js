@@ -9,12 +9,12 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <Col size={12} sm={6}>
+          <Col size={12} sm={6} href="#home">
             <img src={logo} alt="Logo" />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-            <a href="mailto:mariusshenriksen@gmail.com">
+              <a href="mailto:mariusshenriksen@gmail.com">
                 <img src={email2} className="revert-img-color" alt="email" />
               </a>
               <a href="https://github.com/Marshan88">

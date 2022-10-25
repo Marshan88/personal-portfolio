@@ -3,6 +3,9 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import zelda from "../assets/img/Zelda-MissingLinks.PNG";
+import Starling from "../assets/img/CSS.PNG";
+import Csharp from "../assets/img/CsharpGames.PNG";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import { useState, useEffect } from "react";
@@ -10,26 +13,26 @@ import { useState, useEffect } from "react";
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Starling",
+      description: "An app measuring teams with Tuckmans theory with the help of surveys",
+      imgUrl: Starling,
       link: "https://marshan88.github.io/Starling",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Zelda - Missing links",
+      description: "Work in progress..",
+      imgUrl: zelda,
       link: "https://marshan88.github.io/Zelda/",
     },
     {
       title: "Business Startup",
-      description: "https://github.com/Marshan88/CSharpProjects",
-      imgUrl: projImg3,
+      description: "C# projects - this takes you to github",
+      imgUrl: Csharp,
       link: "https://github.com/Marshan88/CSharpProjects",
     },
   ];
 
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisibles, setIsVisible] = useState(true);
   const [height, setHeight] = useState(0)
 
   useEffect(() => {
@@ -43,11 +46,14 @@ export const Projects = () => {
     const winScroll = document.body.scrollTop ||
       document.documentElement.scrollTop;
     setHeight(winScroll);
-
-    if (winScroll > heightToHideFrom) {
-      isVisible && setIsVisible(true);
+    if (window.innerWidth > 1024) {
+      if (winScroll > heightToHideFrom) {
+        isVisibles && setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
     } else {
-      setIsVisible(false);
+      setIsVisible(true);
     }
   };
 
@@ -63,8 +69,8 @@ export const Projects = () => {
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
-            {isVisible &&
-              <TrackVisibility id="hide">
+            {isVisibles &&
+              <TrackVisibility>
                 {({ isVisible }) => (
                   <div
                     className={
@@ -77,13 +83,13 @@ export const Projects = () => {
                         className="nav-pills mb-5 justify-content-center align-items-center"
                         id="pills-tab"
                       >
-                        <Nav.Item>
+                        <Nav.Item className="hoverEffect">
                           <Nav.Link eventKey="first">Tab 1</Nav.Link>
                         </Nav.Item>
-                        <Nav.Item>
+                        <Nav.Item className="hoverEffect">
                           <Nav.Link eventKey="second">Tab 2</Nav.Link>
                         </Nav.Item>
-                        <Nav.Item>
+                        <Nav.Item className="hoverEffect">
                           <Nav.Link eventKey="third">Tab 3</Nav.Link>
                         </Nav.Item>
                       </Nav>
