@@ -1,17 +1,17 @@
 /************ Custom Font ************/
 @font-face {
   font-family: Centra;
-  src: url("./assets/font/CentraNo2-Bold.ttf");
+  src: url('./assets/font/CentraNo2-Bold.ttf');
   font-weight: 700;
 }
 @font-face {
   font-family: Centra;
-  src: url("./assets/font/CentraNo2-Medium.ttf");
+  src: url('./assets/font/CentraNo2-Medium.ttf');
   font-weight: 500;
 }
 @font-face {
   font-family: Centra;
-  src: url("./assets/font/CentraNo2-Book.ttf");
+  src: url('./assets/font/CentraNo2-Book.ttf');
   font-weight: 400;
 }
 
@@ -33,7 +33,7 @@ body {
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
-  font-family: "Centra", sans-serif !important;
+  font-family: 'Centra', sans-serif !important;
 }
 h1,
 h2,
@@ -90,7 +90,7 @@ p.danger {
     padding: 0 150px;
   }
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
   .banner img {
     display: none;
   }
@@ -169,7 +169,7 @@ span.navbar-text {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .social-icon a::before {
-  content: "";
+  content: '';
   width: 42px;
   height: 42px;
   position: absolute;
@@ -205,7 +205,7 @@ span.navbar-text {
   z-index: 1;
 }
 .navbar-text button::before {
-  content: "";
+  content: '';
   width: 0%;
   height: 100%;
   position: absolute;
@@ -219,7 +219,7 @@ span.navbar-text {
   color: #121212;
 }
 .navbar-text button:hover::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
@@ -249,24 +249,24 @@ nav.navbar .navbar-toggler-icon:before {
   background-color: #fff;
   top: 0;
   left: 0;
-  content: "";
+  content: '';
   z-index: 2;
   transition: all 300ms linear;
 }
 nav.navbar .navbar-toggler-icon:after {
   top: 8px;
 }
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:after {
   transform: rotate(45deg);
   background-color: #fff;
   height: 2px;
 }
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:before {
   transform: translateY(8px) rotate(-45deg);
   background-color: #fff;
   height: 2px;
 }
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   border-color: transparent;
 }
 
@@ -275,7 +275,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   height: 100vh;
   padding: 360px 0 1000px 0;
-  background-image: url("./assets/img/banner-bg.png");
+  background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -331,6 +331,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner img {
   animation: updown 3s linear infinite;
 }
+
 @keyframes updown {
   0% {
     transform: translateY(-20px);
@@ -401,7 +402,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: 0;
 }
 .project .nav.nav-pills .nav-link::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 100%;
@@ -436,8 +437,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin-bottom: 24px;
 }
-.proj-imgbx::before {
-  content: "";
+.proj-imgbx:before {
+  content: '';
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
   opacity: 0.85;
   position: absolute;
@@ -445,7 +446,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 0;
   transition: 0.2s ease-in-out;
 }
-.proj-imgbx:hover::before {
+.proj-imgbx:hover:before {
   height: 100%;
 }
 .proj-txtx {
@@ -485,7 +486,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 25px 0 0 0;
-  background-image: url("./assets/img/footer-bg.png");
+  background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
