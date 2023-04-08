@@ -63,7 +63,7 @@ a:hover {
 
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 button {
@@ -84,6 +84,7 @@ p.success {
 p.danger {
   color: red;
 }
+
 @media (min-width: 1700px) {
   main .container {
     max-width: 100%;
@@ -102,7 +103,6 @@ p.danger {
   }
   .project {
     display: contents;
-    /* overflow-y: hidden; */
   }
 }
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
@@ -436,7 +436,10 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  height: 100%;
+  width: 100%;
 }
+
 .proj-imgbx:before {
   content: '';
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);

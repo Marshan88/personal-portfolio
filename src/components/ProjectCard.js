@@ -1,7 +1,8 @@
 import { Col } from "react-bootstrap";
 
 const handleClick = (link) => () => {
-  window.location.href=link;
+  window.location.href = link;
+  // onauxclick = (event) => { MouseEvent.buttons };
 }
 
 export const ProjectCard = ({ title, description, imgUrl, link }) => {
@@ -14,6 +15,6 @@ export const ProjectCard = ({ title, description, imgUrl, link }) => {
           <span>{description}</span>
         </div>
       </div>
-    </Col>
+    </Col >
   );
 };
