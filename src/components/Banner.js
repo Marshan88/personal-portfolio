@@ -14,6 +14,7 @@ import Typed from 'typed.js';
 export const Banner = () => {
   const [text] = useState('');
   const el = React.useRef(null);
+
   //https://github.com/mattboldt/typed.js/
   React.useEffect(() => {
     const typed = new Typed(el.current, {
@@ -37,7 +38,7 @@ export const Banner = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
-            <h1>{`My name is`} {<br></br>}{`Marius Henriksen`}</h1>
+            <h1>{`Marius Henriksen`}</h1>
             <br></br>
             <h2>
               <span ref={el} />
@@ -49,16 +50,6 @@ export const Banner = () => {
               Hello, world!<br></br>
               I'm currently a Student at <a href="https://www.getacademy.no/">GET-Academy</a>,
               looking for an internship.<br></br>
-              I've been through a 6 months
-              course with HTML, CSS, Javascript and C#.<br></br>
-              I experienced what it's
-              like to work alone, in pairs and in a team w/ "customer".
-              <br></br><br></br>
-              GET-academy is a great way to start not only for
-              programming, but also for the key competencies like grit and
-              growth mindset during Chorei.<br></br>
-              (Japanese morning business routine)<br></br>
-              This helped me get a better lifestyle, insight about myself and team dynamics.
             </p>
           </Col>
           <Col xs={12} md={6} xl={5}>

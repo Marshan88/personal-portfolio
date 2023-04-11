@@ -5,14 +5,15 @@ import Starling from "../assets/img/Starling.png";
 import Csharp from "../assets/img/CsharpGames.PNG";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
+
 /* 
   TODO 
   - Add/finish more projects. (link a project card to portfolio('s?))
   - Make project cards clickable. (middle mouse button)
   - Make project background react to scroll event.
   - Better project img.
+*/
 
-  */
 export const Projects = () => {
   const projects = [
     {
@@ -35,6 +36,7 @@ export const Projects = () => {
     },
   ];
 
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -45,10 +47,7 @@ export const Projects = () => {
                 <div className={isVisible ? "animate__animated animate__bounce" : ""}>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <h2>Projects</h2>
-                    <p> Some of the works during my time at GET-Academy.<br></br><br></br>
-                      - Survey app that measures teams with Tuckmans theory<br></br>
-                      - C# "app" to show other C# projects. (link to github)<br></br>
-                      - Zelda game, made with JS</p>
+                    <br></br><br></br>
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item className="hoverEffect">
                         <Nav.Link eventKey="first">Tab 1</Nav.Link>
@@ -77,20 +76,12 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          Work in progress..
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          Nothing here at the moment..
                         </p>
                       </Tab.Pane>
                     </Tab.Content>

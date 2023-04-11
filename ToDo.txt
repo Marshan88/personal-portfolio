@@ -14,8 +14,6 @@
     Resize txt
     New background
     New floating img
-    Animation only trigger first time
-    Update text printed to look better, like dann's portfolio (https://dann.thatportfolio.com/).
     Colorchange on "Welcome to my portfolio"?
 
 ------------------------------------------------------------------------------------
