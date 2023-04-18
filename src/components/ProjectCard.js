@@ -1,7 +1,6 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
 
 const handleClick = (link) => () => {
   window.location.href = link;

@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
 import githubIcon from "../assets/img/githubIcon.svg";
 import coffee from "../assets/img/coffee.svg";
 import email2 from "../assets/img/email2.svg";
@@ -30,33 +29,20 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">
-          <img src={logo} alt="Logo" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
+        {/* <img src={logo} className="Logo" alt="Logo" /> */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
               href="#home"
-              className={
-                activeLink === "home" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("home")}
-            >
-              Home
-            </Nav.Link>
-            <Nav.Link
-              href="#projects"
-              className={
-                activeLink === "projects" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("projects")}
-            >
-              Projects
-            </Nav.Link>
+              className={activeLink === "home" ? "active navbar-link" : "navbar-link"}
+              onClick={() => onUpdateActiveLink("home")}>Home</Nav.Link>
+            <Nav.Link href="#projects"
+              className={activeLink === "projects" ? "active navbar-link" : "navbar-link"}
+              onClick={() => onUpdateActiveLink("projects")}>Projects</Nav.Link>
           </Nav>
+          <div className="centerLogo">
+            {/* <img src={logo} className="logo" alt="Logo" /> */}
+          </div>
           <span className="navBar-text">
             <div className="social-icon">
               <a href="mailto:mariusshenriksen@gmail.com">
@@ -72,6 +58,6 @@ export const NavBar = () => {
           </span>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+    </Navbar >
   );
 };

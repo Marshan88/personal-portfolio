@@ -114,6 +114,16 @@ p.danger {
 }
 
 /************ Navbar Css ************/
+.logo {
+  filter: brightness(0) invert(1) brightness(100%) contrast(100%);
+  width: 30%;
+  align-items: right;
+}
+
+.centerLogo {
+  justify-content: center;
+  align-items: center;
+}
 
 .revert-img-color {
   -webkit-filter: invert(1);
@@ -131,11 +141,17 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 18px 0;
-  background-color: #121212;
+  background-color: #131313e0;
+  background-image: url('./assets/img/color-sharp.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 nav.navbar a.navbar-brand {
-  width: 9%;
+  width: 20%;
 }
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
@@ -275,9 +291,10 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .banner {
   height: 100vh;
   padding: 360px 0 1000px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('./assets/img/BG.jpg');
   background-position: top center;
-  background-size: cover;
+  background-color: #000000;
+  background-size: auto;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -328,26 +345,12 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
-  animation: updown 3s linear infinite;
-}
 
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
-}
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
 
-/************ Projects Css ************/
+/************ Projects Css *********430x270***/
 
 .project {
   height: 100vh;
@@ -495,7 +498,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 .footer img {
-  width: 26%;
+  width: 14%;
 }
 .footer p {
   font-weight: 400;
