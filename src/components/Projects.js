@@ -8,7 +8,6 @@ import "animate.css";
   TODO 
   - Add/finish more projects. (link a project card to portfolio('s?))
   - Make project cards clickable. (middle mouse button)
-  - Make project background react to scroll event (?)
   - Better project img.
 */
 

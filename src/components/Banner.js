@@ -9,9 +9,12 @@ import logo from "../assets/img/Favicon.png";
 
 /*
   TODO
-  - Find new background image.
-  - Make logo and also make it clickable.
-  - Make scrolling go to next section.
+  - New color scheme. darkblue, lightblue, white, grey?
+    - on-hover: lightblue, darkblue, white, grey?
+
+  - Make scrolling go next section (?)
+  - new location for logo/autograph
+  - footer content?f
 */
 
 export const Banner = () => {
