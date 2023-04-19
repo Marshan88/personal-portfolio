@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import placeholder from "../assets/img/FrontEnd.jpg";
-import starling from "../assets/img/starling.PNG";
+import starling from "../assets/img/Starling.png";
 import csharp from "../assets/img/csharp.PNG";
 import summit from "../assets/img/reachingTheSummit.png";
 import tetris from "../assets/img/tetris.png";
