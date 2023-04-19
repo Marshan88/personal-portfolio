@@ -29,7 +29,6 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        {/* <img src={logo} className="Logo" alt="Logo" /> */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
@@ -40,9 +39,6 @@ export const NavBar = () => {
               className={activeLink === "projects" ? "active navbar-link" : "navbar-link"}
               onClick={() => onUpdateActiveLink("projects")}>Projects</Nav.Link>
           </Nav>
-          <div className="centerLogo">
-            {/* <img src={logo} className="logo" alt="Logo" /> */}
-          </div>
           <span className="navBar-text">
             <div className="social-icon">
               <a href="mailto:mariusshenriksen@gmail.com">
