@@ -41,7 +41,7 @@ export const NavBar = () => {
           </Nav>
           <span className="navBar-text">
             <div className="social-icon">
-              <a href="mailto:mariusshenriksen@gmail.com">
+              <a href="mailto:mariush@getacademy.no">
                 <img src={email2} className="revert-img-color" alt="email" />
               </a>
               <a href="https://github.com/Marshan88">
