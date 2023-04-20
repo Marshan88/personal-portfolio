@@ -63,19 +63,19 @@ export const Projects = () => {
       title: "Placeholder",
       description: "Nothing here yet",
       imgUrl: placeholder,
-      link: "",
+      link: "https://www.marshan.me/#projects",
     },
     {
       title: "Placeholder",
       description: "Nothing here yet",
       imgUrl: placeholder,
-      link: "",
+      link: "https://www.marshan.me/#projects",
     },
     {
       title: "Placeholder",
       description: "Nothing here yet",
       imgUrl: placeholder,
-      link: "",
+      link: "https://www.marshan.me/#projects",
     },
   ];
 
