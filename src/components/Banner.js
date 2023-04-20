@@ -7,12 +7,11 @@ import Typed from 'typed.js';
 import logo from "../assets/img/Favicon.png";
 
 /*
-  TODO
-  - footer content?
+  Color theme:
+  - #FF00A8 pink, #FFDD19 yellow, #00FFA3 green, #2D2D2D dark gray, #2F2F2F light gray
 */
 
 export const Banner = () => {
-  const [text] = useState('');
   const el = React.useRef(null);
 
   //https://github.com/mattboldt/typed.js/
@@ -41,14 +40,12 @@ export const Banner = () => {
             <h2>{`Designing websites / apps for companies`}</h2>
             <h2>
               <span ref={el} />
-              <span className="wrap">{text}
-              </span>
             </h2>
             <br></br>
             <p>
-              Student from <a href="https://www.getacademy.no/">GET-Academy</a>,
-              currently looking for work/internship.<br></br><br></br>
-              Skills:</p>
+              Student from <a className="banner-a" href="https://www.getacademy.no/">GET-Academy</a>,
+              currently looking for work/internship.<br></br><br></br></p>
+            <p className="banner-skills-p">Skills:</p>
             <ul>
               <li>HTML, CSS, JavaScript</li>
               <li>ReactJS</li>
@@ -67,6 +64,6 @@ export const Banner = () => {
           </Col>
         </Row>
       </Container>
-    </section>
+    </section >
   )
 }

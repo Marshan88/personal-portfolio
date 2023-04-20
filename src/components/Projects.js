@@ -10,9 +10,11 @@ import TrackVisibility from "react-on-screen";
 import "animate.css";
 
 /* 
-  TODO 
-  - Add/finish more projects. (link a project card to portfolio('s?))
+  TODO:
   - Make project cards clickable. (middle mouse button)
+
+  Color theme:
+  - #FF00A8 pink, #FFDD19 yellow, #00FFA3 green, #2D2D2D dark gray, #2F2F2F light gray
 */
 
 export const Projects = () => {
@@ -87,13 +89,14 @@ export const Projects = () => {
                 <div className={isVisible ? "animate__animated animate__bounce" : ""}>
                   <h2>Projects</h2>
                   <br></br><br></br>
+                  <br></br><br></br>
                 </div>}
             </TrackVisibility>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                 <Nav.Item className="hoverEffect">
                   <Nav.Link eventKey="first">Front-end</Nav.Link>
-                </Nav.Item>
+                </Nav.Item >
                 <Nav.Item className="hoverEffect">
                   <Nav.Link eventKey="second">Back-end</Nav.Link>
                 </Nav.Item>
@@ -143,6 +146,7 @@ export const Projects = () => {
                       })
                     }
                   </Row>
+                  <br></br><br></br>
                   <p>Work in progress..</p>
                 </Tab.Pane>
               </Tab.Content>
