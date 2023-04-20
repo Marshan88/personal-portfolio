@@ -63,19 +63,19 @@ export const Projects = () => {
       title: "Placeholder",
       description: "Nothing here yet",
       imgUrl: placeholder,
-      link: "https://www.marshan.me/#projects",
+      link: "https://marshan.me/#projects",
     },
     {
       title: "Placeholder",
       description: "Nothing here yet",
       imgUrl: placeholder,
-      link: "https://www.marshan.me/#projects",
+      link: "https://marshan.me/#projects",
     },
     {
       title: "Placeholder",
       description: "Nothing here yet",
       imgUrl: placeholder,
-      link: "https://www.marshan.me/#projects",
+      link: "https://marshan.me/#projects",
     },
   ];
 
@@ -83,7 +83,7 @@ export const Projects = () => {
     <section className="project" id="projects">
       <Container>
         <Row>
-          <Col size={12}>
+          <Col className="project-col" size={12}>
             <TrackVisibility once partialVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__bounce" : ""}>

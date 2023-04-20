@@ -32,7 +32,7 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <Container className="banner-bg">
+      <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
