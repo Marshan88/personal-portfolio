@@ -30,7 +30,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-color: #000000 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -89,11 +89,8 @@ select:focus {
   .banner h2 {
     zoom: 150%;
   }
-  .project {
-    display: contents;
-  }
   .project-col {
-    padding: 100px 0 300px 0;
+    padding: 0px 0 300px 0;
   }
 }
 
@@ -126,7 +123,7 @@ nav.navbar {
   transition: 0.3s ease-in-out;
 }
 nav.navbar.scrolled {
-  padding: 18px 0;
+  padding: 0px 0;
   opacity: 0.9;
   background: linear-gradient(90.21deg, black 20%, #7e7e7eaf 500%);
 }
@@ -272,7 +269,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   background-size: auto;
   background-repeat: no-repeat;
   overflow: hidden;
-  box-shadow: 0 0 500px 500px black inset;
+  box-shadow: 0 0 500px 300px black inset;
   background-attachment: fixed;
 }
 .banner .tagline {
