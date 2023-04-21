@@ -94,13 +94,13 @@ export const Projects = () => {
             </TrackVisibility>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                <Nav.Item className="hoverEffect">
+                <Nav.Item className="hoverAndSwipeEffect">
                   <Nav.Link eventKey="first">Front-end</Nav.Link>
                 </Nav.Item >
-                <Nav.Item className="hoverEffect">
+                <Nav.Item className="hoverAndSwipeEffect">
                   <Nav.Link eventKey="second">Back-end</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="hoverEffect">
+                <Nav.Item className="hoverAndSwipeEffect">
                   <Nav.Link eventKey="third">Full-stack</Nav.Link>
                 </Nav.Item>
               </Nav>
