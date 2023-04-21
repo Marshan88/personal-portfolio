@@ -118,8 +118,8 @@ export const Projects = () => {
                   <br></br><br></br>
                 </div>}
             </TrackVisibility>
-            <Tab.Container id="projects-tabs">
-              <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab" defaultActiveKey="first" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
+            <Tab.Container id="projects-tabs" defaultActiveKey="first" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
+              <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                 <Nav.Item className="hoverEffect">
                   <Nav.Link eventKey="first">Front-end</Nav.Link>
                 </Nav.Item >
