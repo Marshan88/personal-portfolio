@@ -30,7 +30,7 @@ export const NavBar = () => {
   return (
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
+        <Navbar.Toggle className="ms-auto" aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
