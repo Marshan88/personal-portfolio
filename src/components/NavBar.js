@@ -3,6 +3,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import githubIcon from "../assets/img/githubIcon.svg";
 import coffee from "../assets/img/coffee.svg";
 import email2 from "../assets/img/email2.svg";
+import linkedin from "../assets/img/linkedin.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -27,10 +28,13 @@ export const NavBar = () => {
   };
 
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+    <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <span className="navbar-toggler-icon"></span>
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Nav.Link
               href="#home"
               className={activeLink === "home" ? "active navbar-link" : "navbar-link"}
@@ -43,6 +47,9 @@ export const NavBar = () => {
             <div className="social-icon">
               <a href="mailto:mariush@getacademy.no">
                 <img src={email2} className="revert-img-color" alt="email" />
+              </a>
+              <a href="https://www.linkedin.com/in/marius-henriksen/">
+                <img src={linkedin} className="revert-img-color" alt="linkedin" />
               </a>
               <a href="https://github.com/Marshan88">
                 <img src={githubIcon} className="revert-img-color" alt="github" />
