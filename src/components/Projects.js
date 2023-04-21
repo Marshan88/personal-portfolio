@@ -1,4 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { useState } from "react";
 import { ProjectCard } from "./ProjectCard";
 import placeholder from "../assets/img/FrontEnd.jpg";
 import starling from "../assets/img/Starling.png";
@@ -17,6 +18,8 @@ import "animate.css";
   - #FF00A8 pink, #FFDD19 yellow, #00FFA3 green, #2D2D2D dark gray, #2F2F2F light gray
 */
 
+
+// From projectcard template
 export const Projects = () => {
   const firstTabProjects = [
     {
@@ -79,6 +82,29 @@ export const Projects = () => {
     },
   ];
 
+  //swipe animation
+  const [touchStart, setTouchStart] = useState(null)
+  const [touchEnd, setTouchEnd] = useState(null)
+
+  // the required distance between touchStart and touchEnd to be detected as a swipe
+  const minSwipeDistance = 50
+
+  const onTouchStart = (e) => {
+    setTouchEnd(null) // otherwise the swipe is fired even with usual touch events
+    setTouchStart(e.targetTouches[0].clientX)
+  }
+
+  const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX)
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return
+    const distance = touchStart - touchEnd
+    const isLeftSwipe = distance > minSwipeDistance
+    const isRightSwipe = distance < -minSwipeDistance
+    if (isLeftSwipe || isRightSwipe) console.log('swipe', isLeftSwipe ? 'left' : 'right')
+    // add your conditional logic here
+  }
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -92,15 +118,15 @@ export const Projects = () => {
                   <br></br><br></br>
                 </div>}
             </TrackVisibility>
-            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+            <Tab.Container id="projects-tabs" defaultActiveKey="first" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
               <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                <Nav.Item className="hoverAndSwipeEffect">
+                <Nav.Item className="hoverEffect">
                   <Nav.Link eventKey="first">Front-end</Nav.Link>
                 </Nav.Item >
-                <Nav.Item className="hoverAndSwipeEffect">
+                <Nav.Item className="hoverEffect">
                   <Nav.Link eventKey="second">Back-end</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="hoverAndSwipeEffect">
+                <Nav.Item className="hoverEffect">
                   <Nav.Link eventKey="third">Full-stack</Nav.Link>
                 </Nav.Item>
               </Nav>
