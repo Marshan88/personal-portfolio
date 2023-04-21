@@ -9,7 +9,7 @@ const handleClick = (link) => () => {
 
 const defaultOptions = {
   reverse: true,  // reverse the tilt direction
-  max: 14,     // max tilt rotation (degrees)
+  max: 16,     // max tilt rotation (degrees)
   perspective: 2000,   // Transform perspective, the lower the more extreme the tilt gets.
   scale: 1,    // 2 = 200%, 1.5 = 150%, etc..
   speed: 450,   // Speed of the enter/exit transition
@@ -23,7 +23,7 @@ export const ProjectCard = ({ title, description, imgUrl, link }) => {
   return (
     <Col onClick={handleClick(link)}>
       <Tilt options={defaultOptions} className="proj-imgbx" >
-        <img src={imgUrl} alt="Project image" />
+        <img src={imgUrl} alt="Projectimg" />
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{description}</span>
