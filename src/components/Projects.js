@@ -108,7 +108,7 @@ export const Projects = () => {
   // <div>onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}</div>
 
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col className="project-col" size={12}>
@@ -132,7 +132,7 @@ export const Projects = () => {
                   <Nav.Link eventKey="third">Full-stack</Nav.Link>
                 </Nav.Item>
               </Nav>
-              <Tab.Content className="bigger">
+              <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
                     {
