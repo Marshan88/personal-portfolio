@@ -44,7 +44,7 @@ export const NavBar = () => {
               onClick={() => onUpdateActiveLink("projects")}>Projects</Nav.Link>
           </Nav>
           <span className="navBar-text">
-            <div className="social-icon">
+            <div className="social-icon" style={{ userSelect: "none" }}>
               <a href="mailto:mariush@getacademy.no">
                 <img src={email2} className="revert-img-color" alt="email" />
               </a>

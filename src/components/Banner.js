@@ -35,14 +35,15 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my Portfolio</span>
+            <span className="tagline" style={{ userSelect: "none" }}>Welcome to my Portfolio</span>
             <h2>{`Designing websites / apps for companies`}</h2>
             <h2>
               <span ref={el} />
             </h2>
             <br></br>
             <p>
-              Student from <a className="banner-a" href="https://www.getacademy.no/">GET-Academy</a>,
+              I'm Marius, I like programming, tech and online competative games.<br></br>
+              Did a course in front-end and back-end at <a className="banner-a" href="https://www.getacademy.no/" target="_blank">GET-Academy</a>,<br></br>
               currently looking for work/internship.<br></br><br></br></p>
             <p className="banner-skills-p">Skills:</p>
             <ul>
@@ -57,7 +58,7 @@ export const Banner = () => {
             <TrackVisibility once partialVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomInDown" : ""}>
-                  <img src={logo} className="logo" alt="Logo" />
+                  <img src={logo} className="logo" alt="Logo" style={{ userSelect: "none" }} />
                 </div>}
             </TrackVisibility>
           </Col>

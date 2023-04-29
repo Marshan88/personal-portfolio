@@ -18,10 +18,10 @@ const defaultOptions = {
   reset: true,    // If the tilt effect has to be reset on exit.
   easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
 };
-
+// target="_blank"
 export const ProjectCard = ({ title, description, imgUrl, link }) => {
   return (
-    <Col onClick={handleClick(link)}>
+    <Col onClick={handleClick.(link)}>
       <Tilt options={defaultOptions} className="proj-imgbx" >
         <img src={imgUrl} alt="Projectimage" />
         <div className="proj-txtx">
