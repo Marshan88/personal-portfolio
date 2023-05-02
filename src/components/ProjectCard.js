@@ -21,7 +21,7 @@ const defaultOptions = {
 // target="_blank"
 export const ProjectCard = ({ title, description, imgUrl, link }) => {
   return (
-    <Col onClick={handleClick.(link)}>
+    <Col onClick={handleClick(link)}>
       <Tilt options={defaultOptions} className="proj-imgbx" >
         <img src={imgUrl} alt="Projectimage" />
         <div className="proj-txtx">
