@@ -2,7 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { useState } from "react";
 import { ProjectCard } from "./ProjectCard";
 import placeholder from "../assets/img/FrontEnd.jpg";
-import starling from "../assets/img/Starling.png";
+import starling from "../assets/img/starling.jpg";
 import csharp from "../assets/img/csharp.PNG";
 import summit from "../assets/img/reachingTheSummit.png";
 import tetris from "../assets/img/tetris.png";
@@ -39,19 +39,19 @@ export const Projects = () => {
       title: "Starling",
       description: "Measure teams w/ Tuckmans theory surveys",
       imgUrl: starling,
-      link: "https://marshan88.github.io/Starling",
+      url: "https://marshan88.github.io/Starling",
     },
     {
       title: "Old portfolio",
       description: "My old portfolio, made with HTML, CSS and JS",
       imgUrl: placeholder,
-      link: "https://github.com/Marshan88/MyPortfolio",
+      url: "https://marshan88.github.io/MyPortfolio/",
     },
     {
       title: "Portfolio v2 (this one)",
       description: "I made this portfolio with ReactJS",
       imgUrl: reactportfolio,
-      link: "https://github.com/Marshan88/personal-portfolio",
+      url: "https://github.com/Marshan88/personal-portfolio",
     },
   ];
   const secondTabProjects = [
@@ -59,19 +59,19 @@ export const Projects = () => {
       title: "C# lessons",
       description: "instead of having multiple repos, I put them all in one",
       imgUrl: csharp,
-      link: "https://github.com/Marshan88/CSharpProjects",
+      url: "https://github.com/Marshan88/CSharpProjects",
     },
     {
       title: "Reaching the summit",
       description: "Text-based adventure game, League of legends themed",
       imgUrl: summit,
-      link: "https://github.com/Marshan88/AdventureGame",
+      url: "https://github.com/Marshan88/AdventureGame",
     },
     {
       title: "Tetris",
       description: "A classic game, made with C# and Windows Forms",
       imgUrl: tetris,
-      link: "https://github.com/Marshan88/TetrisGame",
+      url: "https://github.com/Marshan88/TetrisGame",
     },
   ];
   const thirdTabProjects = [

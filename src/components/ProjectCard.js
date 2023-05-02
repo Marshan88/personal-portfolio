@@ -2,8 +2,11 @@ import React from "react";
 import { Col } from "react-bootstrap";
 import { Tilt } from "react-tilt";
 
-const handleClick = (link) => () => {
-  window.location.href = link;
+const handleClick = (url) => () => {
+  var a = document.createElement('a');
+  a.target = "_blank";
+  a.href = url;
+  a.click();
   // onauxclick = (event) => { MouseEvent.buttons };
 };
 
@@ -19,9 +22,9 @@ const defaultOptions = {
   easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
 };
 // target="_blank"
-export const ProjectCard = ({ title, description, imgUrl, link }) => {
+export const ProjectCard = ({ title, description, imgUrl, url }) => {
   return (
-    <Col onClick={handleClick(link)}>
+    <Col onClick={handleClick(url)}>
       <Tilt options={defaultOptions} className="proj-imgbx" >
         <img src={imgUrl} alt="Projectimage" />
         <div className="proj-txtx">
