@@ -6,13 +6,22 @@ import Typed from 'typed.js';
 import logo from "../assets/img/Favicon.png";
 
 /*
+  TODO:
+  * (A) Make it more personal, less professional. People want to hire a friend, more than they want to hire someone productive.
+  * (A) Improve hexagon background.
+  * (A) Make it mobile friendly, swipe on project tab and onTouch on project cards.
+  * (B) Make project cards clickable. (middle mouse button)
+  * (B) Make scroll and swipe animations go to next section.
+  * (B) Make a new section for Gamedev projects.
+  * (B) Convert to Next.js!
+  * (C) Make a new section for other projects.
+
   Color theme:
   - #FF00A8 pink, #FFDD19 yellow, #00FFA3 green, #2D2D2D dark gray, #2F2F2F light gray
 */
 
+// https://github.com/mattboldt/typed.js/
 export const Banner = () => {
-  const el = React.useRef(null);
-  //https://github.com/mattboldt/typed.js/
   React.useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ['<i>Front</i>-end.', '<i>Back</i>-end.', '<i>Full</i>-stack.'],

@@ -9,30 +9,7 @@ import tetris from "../assets/img/tetris.png";
 import reactportfolio from "../assets/img/reactportfolio.png";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
-/* 
-  TODO:
-  - Convert to Next.js!
-  - Make project cards clickable. (middle mouse button)
-  - Create new site for Gamedev projects, and one for drone projects and add links.
-  - Make it mobile friendly, swipe on project tab and onTouch on project cards.
-  - Make scroll and swipe animations go to next section.
 
-  
-  * make "welcome to my portfolio unselectable"
-  * Make it about yourself, instead of depersonalising yourself with "student"
-  * improve hexagon background, scroll effect is good
-  * decrease space between sections when scrolling
-  * use complimentary colours
-  * how many years per skill? maybe include what you can use the skills for if complimentary?
-  * in the projects page, links should open in a new tab, not direct you away from your website
-  * "Github link" text should be replaced with a sentence
-  * On the Tetris back-end project, you don't need to admit it's from YouTube. You own that skill now!
-  * Decrease space from top, when loading the page slightly, so the information is centered.
-  * Include image of yourself, and an about me section. People want to hire a friend, more than they want to hire someone productive.
-
-  Color theme:
-  - #FF00A8 pink, #FFDD19 yellow, #00FFA3 green, #2D2D2D dark gray, #2F2F2F light gray
-*/
 export const Projects = () => {
   const firstTabProjects = [
     {
@@ -77,7 +54,7 @@ export const Projects = () => {
   const thirdTabProjects = [
     {
       title: "Coming soon!",
-      description: "Nothing here yet",
+      description: "Nextjs, Tailwindcss, and more!",
       imgUrl: placeholder,
       link: "https://marshan.me/#projects",
     },
