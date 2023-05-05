@@ -21,7 +21,9 @@ import logo from "../assets/img/Favicon.png";
 */
 
 // https://github.com/mattboldt/typed.js/
+
 export const Banner = () => {
+  const el = React.useRef(null);
   React.useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ['<i>Front</i>-end.', '<i>Back</i>-end.', '<i>Full</i>-stack.'],
