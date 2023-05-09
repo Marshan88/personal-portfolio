@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import Typed from 'typed.js';
-import logo from "../assets/img/Favicon.png";
+import logo from "../assets/img/logo.png";
 
 /*
   TODO:
