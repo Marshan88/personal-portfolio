@@ -48,13 +48,13 @@ export const NavBar = () => {
               <a href="mailto:mariush@getacademy.no">
                 <img src={email2} className="revert-img-color" alt="email" />
               </a>
-              <a href="https://www.linkedin.com/in/marius-henriksen/" target="_blank">
+              <a href="https://www.linkedin.com/in/marius-henriksen/" target="_blank" rel="noopener noreferrer">
                 <img src={linkedin} className="revert-img-color" alt="linkedin" />
               </a>
-              <a href="https://github.com/Marshan88" target="_blank">
+              <a href="https://github.com/Marshan88" target="_blank" rel="noopener noreferrer">
                 <img src={githubIcon} className="revert-img-color" alt="github" />
               </a>
-              <a href="https://www.buymeacoffee.com/mariushenrix" target="_blank">
+              <a href="https://www.buymeacoffee.com/mariushenrix" target="_blank" rel="noopener noreferrer">
                 <img src={coffee} className="revert-img-color" alt="buymeacoffe" />
               </a>
             </div>

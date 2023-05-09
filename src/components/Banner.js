@@ -53,7 +53,7 @@ export const Banner = () => {
             <br></br>
             <p>
               I'm Marius, I like programming, tech and online competative games.<br></br>
-              Did a course in front-end and back-end at <a className="banner-a" href="https://www.getacademy.no/" target="_blank">GET-Academy</a>,<br></br>
+              Did a course in front-end and back-end at <a className="banner-a" href="https://www.getacademy.no/" target="_blank" rel="noopener noreferrer">GET-Academy</a>,<br></br>
               currently looking for work/internship.<br></br><br></br></p>
             <p className="banner-skills-p">Skills:</p>
             <ul>
